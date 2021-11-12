@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Helpers-D|delete-pro</title>
+
+<head>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar bg-info ">
+        <div class="container-fluid ">
+            <div class="navbar-brand">
+                <p>We technology menagement system</p>
+            </div>
+
+
+            <div class="d-flex">
+                <h3 class="logo_moto text-white"><a href="index.html" class="text-decoration-none text-white"> Dashboard</a></h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="container  bg-light my-2 ">
+                <p class="text-center"><i class="fa fa-user-circle fa-5x" aria-hidden="false"></i></p>
+                <p class="text-center">Anold Amri</p>
+            </div>
+            <div class="container-fluid">
+                <ul class="list-group">
+                    <li class="list-group-item active bg-info" aria-current="false"><i class="fa fa-tachometer-alt-fast fa-1.5x"></i> <a href="dashboard.html" class="text-decoration-none text-dark"> Dashboard</a></li>
+                    <li class="list-group-item"> <i class="fa fa-plus-square fa-1.5x"></i><a href="view-product.html" class="text-decoration-none text-dark"> View product</a> </li>
+                    <li class="list-group-item"><i class="fa fa-money-bill fa-1.5x"></i> <a href="sold-product.html" class="text-decoration-none text-dark"> sold Product</a></li>
+                    <li class="list-group-item"><i class="fa fa-user fa-1.5x"></i> <a href="add-product.html" class="text-decoration-none text-dark"> Add product </a></li>
+                    <li class="list-group-item"><i class="fa fa-edit fa-1.5x"></i><a href="edit-product.html" class="text-decoration-none text-dark">  Edit Product</a></li>
+                    <li class="list-group-item"><i class="fa fa-trash-alt fa-1.5x"></i><a href="delete-product.html" class="text-decoration-none text-dark">  Delete Product</a></li>
+                    <li class="list-group-item"><i class="fa fa-eye fa-1.5x"></i><a href="view-oder.html" class="text-decoration-none text-dark">  View oder</a></li>
+                    <li class="list-group-item"><i class="fa fa-file-alt fa-1.5x"></i><a href="documents.html" class="text-decoration-none text-dark"> Documents</a> </li>
+                    <li class="list-group-item"><i class="fa fa-users-cog fa-1.5x"></i><a href="buyers.html" class="text-decoration-none text-dark"> Buyers</a></li>
+                    <li class="list-group-item"><i class="fa fa-shopping-cart fa-1.5x"></i><a href="Sellers.html" class="text-decoration-none text-dark">  Sellers</a></li>
+                    <li class="list-group-item"><i class="fa fa-sign-out fa-1.5x"></i><a href="index.html" class="text-decoration-none text-dark"> log-Out</a> </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- this is the right hand side part -->
+        <div class="col-md-10 ">
+            <div class="container text-white my-5">
+                <div class="row">
+                    <p class="text-left">Dashboard/welcome</p>
+                    <!-- main area is here -->
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <script>
+                        const labels = [
+                            'January',
+                            'February',
+                            'March',
+                            'April',
+                            'May',
+                            'June',
+                        ];
+                        const data = {
+                            labels: labels,
+                            datasets: [{
+                                label: 'My First dataset',
+                                backgroundColor: 'rgb(255, 99, 132)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [0, 10, 5, 2, 20, 30, 45],
+                            }]
+                        };
+
+                        const config = {
+                            type: 'line',
+                            data: data,
+                            options: {}
+                        };
+                        // === include 'setup' then 'config' above ===
+
+                        const myChart = new Chart(
+                            document.getElementById('myChart'),
+                            config
+                        );
+                    </script>
+                </div>
+            </div>
+
+
+
+            <div class="page-footer fixed-bottom bg-info ">
+                <div class="container-fluid">
+                    <div class="row px-5">
+                        <div class="col">
+                            2021 WE TECHNOLOGY COMPANY LIMITED
+                        </div>
+
+                        <div class="col text-white">
+                            <span class="footer-copyright">Design by we tech web developer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end of main side is here below -->
+        </div>
+    </div>
+</body>
+
+</html>

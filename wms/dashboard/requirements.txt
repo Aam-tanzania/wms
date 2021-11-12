@@ -1,0 +1,14 @@
+dashboard admin
+-------------------------
+1. Book name
+2. Author name
+3. Year of publication
+4. short discription
+5.picture
+
+helper dashboard
+-------------------------
+1. the same as admin
+2. User, salles,... con't see them
+3
+
